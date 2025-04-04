@@ -10,18 +10,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body id="vantagebg">
-    <div class='w-full h-screen flex font-[Poppins]'>
+    <div class="w-full h-screen flex flex-col md:flex-row font-[Poppins]">
         <!-- Left Column (Fixed) -->
-        <div class="sticky top-0 h-screen p-8 w-[40%] mb-4">
-            <div class="px-5 m-auto flex flex-col justify-center items-start h-full rounded-lg gap-4 font-[Poppins]">
-                <h1 class="text-4xl font-semibold">Theophilus Precious</h1>
-                <h2 class="text-xl font-semibold">Frontend Dev</h2>
-                <p class="text-lg w-[70%]">Crafting seamless digital experiences with a focus on clean, efficient code and elegant design. Transforming ideas into interactive realities.</p>                
+        <div id="left" class="w-full md:w-[40%] p-8 h-screen md:sticky top-0 mb-4">
+            <div class="px-5 w-full m-auto flex flex-col justify-center items-center md:items-start h-full rounded-lg gap-4 font-[Poppins]">
+                <h1 class="w-full text-center text-4xl text-teal-600 font-semibold">Theophilus Precious</h1>
+                <h2 class="w-full text-center text-xl text-teal-600 font-semibold">Frontend Dev</h2>
+                <p class="w-full text-lg text-grey-600/50 w-[70%] items-center">Crafting seamless digital experiences with a focus on clean, efficient code and elegant design. Transforming ideas into interactive realities.</p>                
             </div>            
         </div>
         
         <!-- Right Column (Scrollable) -->
-        <div class="w-[60%] p-8 h-screen overflow-y-auto">
+         <div id="right" class="w-full md:w-[60%] p-8 h-screen overflow-y-auto">
             <div class="w-full flex">
                 <h2 class="text-4xl font-semibold w-[50%] h-fit m-auto text-teal-700">Skills & Tools</h2>
                 <div class="flex flex-wrap gap-4">
@@ -77,7 +77,7 @@
             </div>            
             <div>
                 <h2 class="text-4xl font-semibold text-teal-700">My Projects</h2>
-                <div class="flex flex-wrap gap-4">
+                <div class="flex flex-col gap-4">
                     <a class="block" href="#">
                         <div class="w-full md:w-auto flex gap-4 items-center p-4 rounded-md shadow-sm hover:shadow-lg transition-colors duration-300 hover:bg-teal-600/20">
                             <img class="max-w-[200px] h-auto rounded-md" src="/Assets/images/crypt.png" alt="CryptoPips">
@@ -94,10 +94,9 @@
                         <div class="w-full md:w-auto flex gap-4 items-center p-4 rounded-md shadow-sm hover:shadow-lg transition-colors duration-300 hover:bg-teal-600/20">
                             <img class="max-w-[200px] h-auto rounded-md" src="/Assets/images/qr.png" alt="CryptoPips">
                             <div class="w-[65%]">
-                                <h3 class="text-lg font-semibold">CryptoPips Real-Time Cryptocurrency Analytics</h3>
+                                <h3 class="text-lg font-semibold">Qr-code Gen</h3>
                                 <p class="text-gray-600 text-sm">
-                                    A responsive cryptocurrency dashboard was developed using React, Tailwind CSS, Chart.js, Alpha Vantage, and CoinGecko APIs to deliver real-time price tracking, historical data visualization, and market insights. Featuring interactive charts and live updates, the platform ensures an optimized user experience for analyzing cryptocurrency trends.
-                                </p>
+                                   This tool instantly generates QR codes for URLs and messages, with optional real-time encryption for added privacy. Built for speed and simplicity, it uses an API call to ensure seamless performance. A built-in history feature helps recover previously encoded data, so users can quickly retrieve past URLs or messages in case of data loss.</p>
                             </div>
                         </div>
                     </a>
@@ -105,10 +104,9 @@
                         <div class="w-full md:w-auto flex gap-4 items-center p-4 rounded-md shadow-sm hover:shadow-lg transition-colors duration-300 hover:bg-teal-600/20">
                             <img class="max-w-[200px] h-auto rounded-md" src="/Assets/images/wordw.png" alt="CryptoPips">
                             <div class="w-[65%]">
-                                <h3 class="text-lg font-semibold">CryptoPips Real-Time Cryptocurrency Analytics</h3>
+                                <h3 class="text-lg font-semibold">Wordwisp</h3>
                                 <p class="text-gray-600 text-sm">
-                                    A responsive cryptocurrency dashboard was developed using React, Tailwind CSS, Chart.js, Alpha Vantage, and CoinGecko APIs to deliver real-time price tracking, historical data visualization, and market insights. Featuring interactive charts and live updates, the platform ensures an optimized user experience for analyzing cryptocurrency trends.
-                                </p>
+                                    This webpage is a dynamic language detection and translation tool designed to enhance user accessibility and communication. It automatically identifies the language of input text and seamlessly translates it based on the user’s selected language preference. Developed using the Chrome Developer Tools suite, the project leverages modern web technologies to ensure performance, responsiveness, and intuitive user interaction.</p>
                             </div>
                         </div>
                     </a>               
@@ -116,9 +114,9 @@
                         <div class="w-full md:w-auto flex gap-4 items-center p-4 rounded-md shadow-sm hover:shadow-lg transition-colors duration-300 hover:bg-teal-600/20">
                             <img class="max-w-[200px] h-auto rounded-md" src="/Assets/images/hue.png" alt="CryptoPips">
                             <div class="w-[65%]">
-                                <h3 class="text-lg font-semibold">CryptoPips Real-Time Cryptocurrency Analytics</h3>
+                                <h3 class="text-lg font-semibold">Hue</h3>
                                 <p class="text-gray-600 text-sm">
-                                    A responsive cryptocurrency dashboard was developed using React, Tailwind CSS, Chart.js, Alpha Vantage, and CoinGecko APIs to deliver real-time price tracking, historical data visualization, and market insights. Featuring interactive charts and live updates, the platform ensures an optimized user experience for analyzing cryptocurrency trends.
+                                   Welcome to the Hue Guessing Game, a fun and interactive web application developed as part of my internship project. The game challenges players to guess a color based on its hue, providing an engaging way to test your color perception. Built using HTML, CSS, and JavaScript, the game offers a simple, user-friendly interface with responsive design, ensuring a smooth experience across all devices. This project allowed me to apply my skills in front-end development and problem-solving while enhancing my understanding of web development fundamentals.
                                 </p>
                             </div>
                         </div>
@@ -127,55 +125,56 @@
                         <div class="w-full md:w-auto flex gap-4 items-center p-4 rounded-md shadow-sm hover:shadow-lg transition-colors duration-300 hover:bg-teal-600/20">
                             <img class="max-w-[200px] h-auto rounded-md" src="/Assets/images/age.png" alt="CryptoPips">
                             <div class="w-[65%]">
-                                <h3 class="text-lg font-semibold">CryptoPips Real-Time Cryptocurrency Analytics</h3>
+                                <h3 class="text-lg font-semibold">The Age Calculator </h3>
                                 <p class="text-gray-600 text-sm">
-                                    A responsive cryptocurrency dashboard was developed using React, Tailwind CSS, Chart.js, Alpha Vantage, and CoinGecko APIs to deliver real-time price tracking, historical data visualization, and market insights. Featuring interactive charts and live updates, the platform ensures an optimized user experience for analyzing cryptocurrency trends.
+                                    Welcome to the Age Calculator! This simple yet engaging tool helps you calculate your exact age based on your birthdate. But that's not all – after calculating your age, we also provide a fun tip personalized to your birth month, thanks to a fun tip API integrated into the site. Built with HTML, CSS, and JavaScript, this user-friendly page ensures a smooth and interactive experience. Whether you're curious about your age or looking for a quick dose of fun advice, this tool has got you covered!
                                 </p>
                             </div>
                         </div>
                     </a>
                 </div>
             </div>
-            <div>
-                <h2 class="text-xl font-medium">Connect with me</h2>
-                <div class="flex gap-4">               
-                    <div class="w-[50%]">
-                        <h1>medium</h1>
+            <div class="flex flex-col gap-4 mt-8">
+                <h2 class="text-4xl font-semibold text-teal-700">Connect with me</h2>                              
+                    
+                <div class="flex flex-row flew-wrap gap-4 w-ull h-fit m-auto justify-center items-center">
+                    <div class=" bg-neutral-700/40 w-[45%] gap-4 p-6 rounded-md flex flex-col items-center justify-center">                        
+                        <img class="w-[40px] h-auto" src="/Assets/images/connect/medium.png" alt="">
+                        <p class="text-white">Medium</p>
                     </div>
-                    <div class="flex flex-row gap-4 w-[50%]">
-                        <div class="w-[50%]">
-                            <img src="" alt="">
-                            <p>linkedin</p>
-                        </div>
-                        <div>
-                            <img src="" alt="">
-                            <p>instagram</p>
-                        </div>
-                        <div>
-                            <img src="" alt="">
-                            <p>twitter</p>
-                        </div>
-                        <div>
-                            <img src="" alt="">
-                            <p>github</p>
-                        </div>
+                    <div class=" bg-neutral-700/40  w-[45%] gap-4 p-6 rounded-md flex flex-col items-center justify-center">
+                        <img class="w-[40px] h-auto" src="/Assets/images/connect/link.png" alt="">
+                        <p class="text-white">linkedin</p>
+                    </div>
+                    <div class=" bg-neutral-700/40  w-[45%] gap-4 p-6 rounded-md flex flex-col items-center justify-center">
+                        <img class="w-[60px] h-auto" src="/Assets/images/connect/insta.png" alt="">
+                        <p class="text-white">instagram</p>
+                    </div>
+                    <div class=" bg-neutral-700/40  w-[45%] gap-4  p-6 rounded-md flex flex-col items-center justify-center">
+                        <img class="w-[40px] h-auto" src="/Assets/images/connect/x.png" alt="">
+                        <p class="text-white">twitter</p>
+                    </div>
+                    <div class=" bg-neutral-700/40  w-[45%] gap-4 p-6 rounded-md flex flex-col items-center justify-center">
+                        <img class="w-[40px] h-auto" src="/Assets/images/connect/gith.png" alt="">
+                        <p class="text-white">github</p>
                     </div>
                 </div>
+                
             </div>
-            <div>
-                <h2>Send a Message</h2>
-                <form action="">
-                    <label for="">Name</label>
-                    <input type="text" name="" id="" class="border border-gray-300 rounded-md p-2 mb-4 w-full" placeholder="Enter your name">
-                    <label for="">Email</label>
-                    <input type="email" name="" id="" class="border border-gray-300 rounded-md p-2 mb-4 w-full" placeholder="Enter your email">
-                    <label for="">Message</label>
-                    <textarea name="" id="" cols="30" rows="10" class="border border-gray-300 rounded-md p-2 mb-4 w-full" placeholder="Enter your message"></textarea>
-                    <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Send</button>
+            <div class="mt-9">
+                <h2 class="text-4xl font-semibold text-teal-700">Send a Message</h2>
+                <form action="" class="bg-teal-500/30 p-4 mt-8 rounded-md w-[70%] m-auto flex flex-col gap-4">
+                    <label for="" class="text-white">Name</label>
+                    <input type="text" name="" id="" class="border-2 border-gray-300 placeholder:text-white text-white outline-none bg-transparent rounded-md p-2 mb-4 w-full" placeholder="Enter your name">
+                    <label for="" class="text-white">Email</label>
+                    <input type="email" name="" id="" class="border-2 border-gray-300 placeholder:text-white text-white outline-none bg-transparent rounded-md p-2 mb-4 w-full" placeholder="Enter your email">
+                    <label for="" class="text-white">Message</label>
+                    <textarea name="" id="" cols="20" rows="4" class="border-2 border-gray-300 placeholder:text-white text-white outline-none bg-transparent rounded-md p-2 mb-4 w-full" placeholder="Enter your message"></textarea>
+                    <button type="submit" class="m-auto w-[20%] bg-white hover:bg-teal-700 hover:text-white text-teal-700 font-bold py-2 px-4 rounded">Send</button>
                 </form>
             </div>
-            <div class="bg-gray-300 p-4 text-center">
-                <p>&copy; 2023 Your Name. All rights reserved.</p>
+            <div class="text-gray-600 mt-9 text-center">
+                <p>&copy; 2025 Simi. All rights reserved.</p>
                 <p>Made with ❤️ using Tailwind CSS</p>
             </div>
         </div>
