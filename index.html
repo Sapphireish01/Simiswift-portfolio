@@ -4,84 +4,112 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              screens: {
+                'lgmid': {'max': '1025px'}
+              }
+            }
+          }
+        }
+    </script>
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+      (function(){
+        emailjs.init("xVdlXKlXP0ljeaar0"); // From your EmailJS dashboard
+      })();
+    </script>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/dist/boxicons.js">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body id="vantagebg">
-    <div class="w-full h-screen flex flex-col md:flex-row font-[Poppins]">
+    <div class="w-full min-h-screen md:h-screen flex flex-col md:flex-row font-[Poppins]">
         <!-- Left Column (Fixed) -->
-        <div id="left" class="w-full md:w-[40%] p-8 h-screen md:sticky top-0 mb-4">
+        <div id="left" class="w-full md:w-[40%] p-8 md:h-screen border-b-2 border-teal-300 top-0 mb-4">
             <div class="px-5 w-full m-auto flex flex-col justify-center items-center md:items-start h-full rounded-lg gap-4 font-[Poppins]">
                 <h1 class="w-full text-center text-4xl text-teal-600 font-semibold">Theophilus Precious</h1>
                 <h2 class="w-full text-center text-xl text-teal-600 font-semibold">Frontend Dev</h2>
-                <p class="w-full text-lg text-grey-600/50 w-[70%] items-center">Crafting seamless digital experiences with a focus on clean, efficient code and elegant design. Transforming ideas into interactive realities.</p>                
+                <p class="text-lg text-grey-600/50 w-full text-center">From Figma to Function, Turning Designs Into Seamless Digital Experiences.</p>                
             </div>            
         </div>
         
         <!-- Right Column (Scrollable) -->
-         <div id="right" class="w-full md:w-[60%] p-8 h-screen overflow-y-auto">
-            <div class="w-full flex">
-                <h2 class="text-4xl font-semibold w-[50%] h-fit m-auto text-teal-700">Skills & Tools</h2>
-                <div class="flex flex-wrap gap-4">
-                    <div class="hover:bg-teal-600/20 w-[22%] px-4 py-2 rounded-xl">
-                        <img class="w-[50%]h-[50%]" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original-wordmark.svg" />                      
+        <div id="right" class="w-full md:w-[60%] flex flex-col gap-4 p-8 md:h-screen overflow-y-auto">
+            <div>
+                <h2 class="text-4xl my-4 font-semibold text-teal-700">Sneak peek</h2>
+                <p class="text-gray-700 tracking-wide text-sm">
+                    <span class="block my-4"> I’m a frontend developer who’s passionate about bringing designs to life through clean, user-focused code.</span> 
+                    <span class="block my-4">I specialize in transforming ideas into seamless, responsive web experiences—with a strong eye for detail and a deep appreciation for intuitive UX.</span>
+                    <span class="block my-4">Currently, I’m interning at Internpulse, where I’m gaining hands-on experience collaborating with teams and contributing to real-world projects.</span> 
+                    <span class="block my-4">It’s sharpening my skills and fueling my passion for crafting interfaces that not only work—but feel right.</span>                    
+                    <span class="block my-4">In my spare time, I’m usually reading, travelling  or running around solving the next Word puzzle</span>
+                </p>
+            </div>
+            <div class="w-full flex flex-col">
+                <h2 class="text-4xl my-4 font-semibold text-teal-700">Skills & Tools</h2>
+                <div class="flex flex-wrap gap-4 md:mb-[8rem]">
+                    <div class="hover:bg-teal-600/20 flex justify-center w-[30%] h-[30%] m-auto px-2 py-2 rounded-xl">
+                        <img class="w-[50px] h-auto" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original-wordmark.svg" />                      
                         <!-- <p class="text-white text-center">CSS</p> -->
                     </div>
-                    <div class="hover:bg-teal-600/20 w-[22%] px-4 py-2 rounded-xl">
-                        <img class="w-[50%]h-[50%]" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original-wordmark.svg" />                                             
+                    <div class="hover:bg-teal-600/20 flex justify-center w-[30%] h-[30%] m-auto px-2 py-2 rounded-xl">
+                        <img class="w-[50px] h-auto" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original-wordmark.svg" />                                             
                         <!-- <p class="text-white text-center">HTML</p> -->
                     </div>
-                    <div class="hover:bg-teal-600/20 w-[22%] px-4 py-2 rounded-xl">                        
-                        <img class="w-[50%]h-[50%]"src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />          
+                    <div class="hover:bg-teal-600/20 flex justify-center w-[30%] h-[30%] m-auto px-2 py-2 rounded-xl">                        
+                        <img class="w-[50px] h-auto"src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />          
                         <!-- <p class="text-white text-center">JavaScript</p> -->
                     </div>
-                    <div class="hover:bg-teal-600/20 w-[22%] px-4 py-2 rounded-xl">                        
-                        <img class="w-[50%]h-[50%]" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original-wordmark.svg" />          
+                    <div class="hover:bg-teal-600/20 flex justify-center w-[30%] h-[30%] m-auto px-2 py-2 rounded-xl">                        
+                        <img class="w-[50px] h-auto" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original-wordmark.svg" />          
                         <!-- <p class="text-white text-center">React</p> -->
                     </div>
-                    <div class="hover:bg-teal-600/20 w-[22%] px-4 py-2 rounded-xl">
-                        <img class="w-[50%]h-[50%]" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg" />
+                    <div class="hover:bg-teal-600/20 flex justify-center w-[30%] h-[30%] m-auto px-2 py-2 rounded-xl">
+                        <img class="w-[50px] h-auto" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg" />
                         <!-- <p class="text-white text-center">Nodejs</p> -->
                     </div>
-                    <div class="hover:bg-teal-600/20 w-[22%] px-4 py-2 rounded-xl">                        
-                        <img class="w-[50%]h-[50%]" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" />                              
+                    <div class="hover:bg-teal-600/20 flex justify-center w-[30%] h-[30%] m-auto px-2 py-2 rounded-xl">                        
+                        <img class="w-[50px] h-auto" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" />                              
                         <!-- <p class="text-white text-center">Tailwindcss</p> -->
                     </div>
-                    <div class="hover:bg-teal-600/20 w-[22%] px-4 py-2 rounded-xl">                        
-                        <img class="w-[50%]h-[50%]" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original-wordmark.svg" />          
+                    <div class="hover:bg-teal-600/20 flex justify-center w-[30%] h-[30%] m-auto px-2 py-2 rounded-xl">                        
+                        <img class="w-[50px] h-auto" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original-wordmark.svg" />          
                         <!-- <p class="text-white text-center">Express</p> -->
                     </div>
-                    <div class="hover:bg-teal-600/20 w-[22%] px-4 py-2 rounded-xl">                        
-                        <img class="w-[50%]h-[50%]" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" />          
+                    <div class="hover:bg-teal-600/20 flex justify-center w-[30%] h-[30%] m-auto px-2 py-2 rounded-xl">                        
+                        <img class="w-[50px] h-auto" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" />          
                         <!-- <p class="text-white text-center">Git</p> -->
                     </div>                    
-                    <div class="hover:bg-teal-600/20 w-[22%] px-4 py-2 rounded-xl">                        
-                        <img class="w-[50%]h-[50%]" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original-wordmark.svg" />          
+                    <div class="hover:bg-teal-600/20 flex justify-center w-[30%] h-[30%] m-auto px-2 py-2 rounded-xl">                        
+                        <img class="w-[50px] h-auto" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original-wordmark.svg" />          
                         <!-- <p class="text-white text-center">Github</p> -->
                     </div>
-                    <div class="hover:bg-teal-600/20 w-[22%] px-4 py-2 rounded-xl">                        
-                        <img class="w-[50%]h-[50%]" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original-wordmark.svg" />          
+                    <div class="hover:bg-teal-600/20 flex justify-center w-[30%] h-[30%] m-auto px-2 py-2 rounded-xl">                        
+                        <img class="w-[50px] h-auto" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original-wordmark.svg" />          
                         <!-- <p class="text-white text-center">PostgreSql</p> -->
                     </div>
-                    <div class="hover:bg-teal-600/20 w-[22%] px-4 py-2 rounded-xl">                        
-                        <img class="w-[50%]h-[50%]" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" />                               
+                    <div class="hover:bg-teal-600/20 flex justify-center w-[30%] h-[30%] m-auto px-2 py-2 rounded-xl">                        
+                        <img class="w-[50px] h-auto" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" />                               
                         <!-- <p class="text-white text-center">Figma</p> -->
                     </div>
-                    <div class="hover:bg-teal-600/20 w-[22%] px-4 py-2 rounded-xl">                        
-                        <img class="w-[50%]h-[50%]" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/materialui/materialui-original.svg" />                              
+                    <div class="hover:bg-teal-600/20 flex justify-center w-[30%] h-[30%] m-auto px-2 py-2 rounded-xl">                        
+                        <img class="w-[50px] h-auto" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/materialui/materialui-original.svg" />                              
                         <!-- <p class="text-white text-center">Materialui</p> -->
                     </div>
                 </div>                
             </div>            
-            <div>
-                <h2 class="text-4xl font-semibold text-teal-700">My Projects</h2>
+            <div class="w-full flex flex-col">
+                <h2 class="text-4xl my-4 font-semibold text-teal-700">My Projects</h2>
                 <div class="flex flex-col gap-4">
                     <a class="block" href="#">
-                        <div class="w-full md:w-auto flex gap-4 items-center p-4 rounded-md shadow-sm hover:shadow-lg transition-colors duration-300 hover:bg-teal-600/20">
+                        <div class="w-full md:w-auto flex lg:flex-row flex-col gap-4 items-center p-4 rounded-md shadow-sm hover:shadow-lg transition-colors duration-300 hover:bg-teal-600/20">
                             <img class="max-w-[200px] h-auto rounded-md" src="/Assets/images/crypt.png" alt="CryptoPips">
-                            <div class="w-[65%]">
+                            <div class="w-full lg:w-[65%]">
                                 <h3 class="text-lg font-semibold">CryptoPips Real-Time Cryptocurrency Analytics</h3>
                                 <p class="text-gray-600 text-sm">
                                     A responsive cryptocurrency dashboard was developed using React, Tailwind CSS, Chart.js, Alpha Vantage, and CoinGecko APIs to deliver real-time price tracking, historical data visualization, and market insights. Featuring interactive charts and live updates, the platform ensures an optimized user experience for analyzing cryptocurrency trends.
@@ -91,9 +119,9 @@
                     </a>
                                       
                     <a class="block" href="#">
-                        <div class="w-full md:w-auto flex gap-4 items-center p-4 rounded-md shadow-sm hover:shadow-lg transition-colors duration-300 hover:bg-teal-600/20">
+                        <div class="w-full md:w-auto flex lg:flex-row flex-col gap-4 items-center p-4 rounded-md shadow-sm hover:shadow-lg transition-colors duration-300 hover:bg-teal-600/20">
                             <img class="max-w-[200px] h-auto rounded-md" src="/Assets/images/qr.png" alt="CryptoPips">
-                            <div class="w-[65%]">
+                            <div class="w-full lg:w-[65%]">
                                 <h3 class="text-lg font-semibold">Qr-code Gen</h3>
                                 <p class="text-gray-600 text-sm">
                                    This tool instantly generates QR codes for URLs and messages, with optional real-time encryption for added privacy. Built for speed and simplicity, it uses an API call to ensure seamless performance. A built-in history feature helps recover previously encoded data, so users can quickly retrieve past URLs or messages in case of data loss.</p>
@@ -101,9 +129,9 @@
                         </div>
                     </a>
                     <a class="block" href="#">
-                        <div class="w-full md:w-auto flex gap-4 items-center p-4 rounded-md shadow-sm hover:shadow-lg transition-colors duration-300 hover:bg-teal-600/20">
+                        <div class="w-full md:w-auto flex lg:flex-row flex-col gap-4 items-center p-4 rounded-md shadow-sm hover:shadow-lg transition-colors duration-300 hover:bg-teal-600/20">
                             <img class="max-w-[200px] h-auto rounded-md" src="/Assets/images/wordw.png" alt="CryptoPips">
-                            <div class="w-[65%]">
+                            <div class="w-full lg:w-[65%]">
                                 <h3 class="text-lg font-semibold">Wordwisp</h3>
                                 <p class="text-gray-600 text-sm">
                                     This webpage is a dynamic language detection and translation tool designed to enhance user accessibility and communication. It automatically identifies the language of input text and seamlessly translates it based on the user’s selected language preference. Developed using the Chrome Developer Tools suite, the project leverages modern web technologies to ensure performance, responsiveness, and intuitive user interaction.</p>
@@ -111,9 +139,9 @@
                         </div>
                     </a>               
                     <a class="block" href="#">
-                        <div class="w-full md:w-auto flex gap-4 items-center p-4 rounded-md shadow-sm hover:shadow-lg transition-colors duration-300 hover:bg-teal-600/20">
+                        <div class="w-full md:w-auto flex lg:flex-row flex-col gap-4 items-center p-4 rounded-md shadow-sm hover:shadow-lg transition-colors duration-300 hover:bg-teal-600/20">
                             <img class="max-w-[200px] h-auto rounded-md" src="/Assets/images/hue.png" alt="CryptoPips">
-                            <div class="w-[65%]">
+                            <div class="w-full lg:w-[65%]">
                                 <h3 class="text-lg font-semibold">Hue</h3>
                                 <p class="text-gray-600 text-sm">
                                    Welcome to the Hue Guessing Game, a fun and interactive web application developed as part of my internship project. The game challenges players to guess a color based on its hue, providing an engaging way to test your color perception. Built using HTML, CSS, and JavaScript, the game offers a simple, user-friendly interface with responsive design, ensuring a smooth experience across all devices. This project allowed me to apply my skills in front-end development and problem-solving while enhancing my understanding of web development fundamentals.
@@ -122,9 +150,9 @@
                         </div>
                     </a>
                     <a class="block" href="#">
-                        <div class="w-full md:w-auto flex gap-4 items-center p-4 rounded-md shadow-sm hover:shadow-lg transition-colors duration-300 hover:bg-teal-600/20">
+                        <div class="w-full md:w-auto flex lg:flex-row flex-col gap-4 items-center p-4 rounded-md shadow-sm hover:shadow-lg transition-colors duration-300 hover:bg-teal-600/20">
                             <img class="max-w-[200px] h-auto rounded-md" src="/Assets/images/age.png" alt="CryptoPips">
-                            <div class="w-[65%]">
+                            <div class="w-full lg:w-[65%]">
                                 <h3 class="text-lg font-semibold">The Age Calculator </h3>
                                 <p class="text-gray-600 text-sm">
                                     Welcome to the Age Calculator! This simple yet engaging tool helps you calculate your exact age based on your birthdate. But that's not all – after calculating your age, we also provide a fun tip personalized to your birth month, thanks to a fun tip API integrated into the site. Built with HTML, CSS, and JavaScript, this user-friendly page ensures a smooth and interactive experience. Whether you're curious about your age or looking for a quick dose of fun advice, this tool has got you covered!
@@ -135,51 +163,55 @@
                 </div>
             </div>
             <div class="flex flex-col gap-4 mt-8">
-                <h2 class="text-4xl font-semibold text-teal-700">Connect with me</h2>                              
+                <h2 class="text-4xl my-4 font-semibold text-teal-700">Connect with me</h2>                              
                     
-                <div class="flex flex-row flew-wrap gap-4 w-ull h-fit m-auto justify-center items-center">
-                    <div class=" bg-neutral-700/40 w-[45%] gap-4 p-6 rounded-md flex flex-col items-center justify-center">                        
-                        <img class="w-[40px] h-auto" src="/Assets/images/connect/medium.png" alt="">
-                        <p class="text-white">Medium</p>
+                <div class="flex flex-row flex-wrap gap-4 w-full h-fit m-auto justify-center items-center">
+                    <div class="w-[45%] gap-4 p-6 rounded-md flex flex-col items-center justify-center">                        
+                        <a href="https://medium.com/@sapphiresimi">
+                            <img class="w-[40px] h-auto" src="/Assets/images/connect/medium.png" alt="">
+                            <p class="text-white">Medium</p>
+                        </a>
                     </div>
-                    <div class=" bg-neutral-700/40  w-[45%] gap-4 p-6 rounded-md flex flex-col items-center justify-center">
-                        <img class="w-[40px] h-auto" src="/Assets/images/connect/link.png" alt="">
-                        <p class="text-white">linkedin</p>
+                    <div class="w-[45%] gap-4 p-6 rounded-md flex flex-col items-center justify-center">
+                        <a href="www.linkedin.com/in/precious-24-theophilus">
+                            <img class="w-[40px] h-auto" src="/Assets/images/connect/link.png" alt="">
+                            <p class="text-white">linkedin</p>
+                        </a>
                     </div>
-                    <div class=" bg-neutral-700/40  w-[45%] gap-4 p-6 rounded-md flex flex-col items-center justify-center">
-                        <img class="w-[60px] h-auto" src="/Assets/images/connect/insta.png" alt="">
-                        <p class="text-white">instagram</p>
+                    <div class="w-[45%] gap-4 p-6 rounded-md flex flex-col items-center justify-center">
+                        <a href="https://www.instagram.com/currently_sapphire/">
+                            <img class="w-[60px] h-auto" src="/Assets/images/connect/insta.png" alt="">
+                            <p class="text-white">instagram</p>
+                        </a>
                     </div>
-                    <div class=" bg-neutral-700/40  w-[45%] gap-4  p-6 rounded-md flex flex-col items-center justify-center">
-                        <img class="w-[40px] h-auto" src="/Assets/images/connect/x.png" alt="">
-                        <p class="text-white">twitter</p>
+                    <div class="w-[45%] gap-4  p-6 rounded-md flex flex-col items-center justify-center">
+                        <a href="https://x.com/preciousTheoph4">
+                            <img class="w-[40px] h-auto" src="/Assets/images/connect/x.png" alt="">
+                            <p class="text-white">twitter</p>
+                        </a>
                     </div>
-                    <div class=" bg-neutral-700/40  w-[45%] gap-4 p-6 rounded-md flex flex-col items-center justify-center">
-                        <img class="w-[40px] h-auto" src="/Assets/images/connect/gith.png" alt="">
-                        <p class="text-white">github</p>
+                    <div class="w-[45%] gap-4 p-6 rounded-md flex flex-col items-center justify-center">
+                        <a href="https://github.com/Sapphireish01/">
+                            <img class="w-[40px] h-auto" src="/Assets/images/connect/gith.png" alt="">
+                            <p class="text-white">github</p>
+                        </a>
                     </div>
-                </div>
-                
+                    <div class="w-[45%] gap-4 p-6 rounded-md flex flex-col items-center justify-center">
+                        <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJZbjrzHjWcHVgRMHpbWfWmhWBTBmmTQwdmMZdlcrghDNKdZsBfxSCnDrcNNDvfsjHXKnNV" target="_blank">
+                            <img class="w-[40px] h-auto" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAa9JREFUSEvtlj8oRXEUxz9PSmKxWFgU2chEmWws2CySTRZKkpB/IUmKRTbJYsNAJpNiEpsoC4vFQlLCPa9z6/Trve6fd3nKe3V7t3PP7/s559zfueeXIk+/VJ64FMC/Vnm31JPAIFCVcASPwCaw6OtacAdwlDDQlWsHTsRowZLtgnq+AmUJBWG1hLHkgmc8w6zCaoBdoDVH+BnQC9yrzpzPsBlbsNjlGtYISyMG8AZMAOvAl14ikREs2QrcrUStZt8cEn6hWd4Zf4GHAu8DA8CTLigCRoF5oCRLAO/ANLDq/X+qTyWwBXSHBYvfMzACbBtQPbAHNDrwK6AHuDH2fmDNK3eFsQWW2uqeAn3AgxqLgXHNTkxShWXgQ59XAztAW4bKRALL+hdPeArYMBulQYWvzb4Y0pYsz/I6IoN9nXPN/tYRrtMsWwI2YGyw6MomEoEVhYxpN2TbdDaWnMC+0KXeNIVss1DtFEErkmsiGUciRunjOMJBa/5WxnYsBkUe97l8C9KHATudOoGDuIoh13UBhy5YBoF80OUk8hNHn2MdPOkBUjjehnxVubv9v1J/AzG/WB9938PnAAAAAElFTkSuQmCC" alt="">
+                            <p class="text-white">Email</p>
+                        </a>
+                    </div>
+                </div>               
             </div>
-            <div class="mt-9">
-                <h2 class="text-4xl font-semibold text-teal-700">Send a Message</h2>
-                <form action="" class="bg-teal-500/30 p-4 mt-8 rounded-md w-[70%] m-auto flex flex-col gap-4">
-                    <label for="" class="text-white">Name</label>
-                    <input type="text" name="" id="" class="border-2 border-gray-300 placeholder:text-white text-white outline-none bg-transparent rounded-md p-2 mb-4 w-full" placeholder="Enter your name">
-                    <label for="" class="text-white">Email</label>
-                    <input type="email" name="" id="" class="border-2 border-gray-300 placeholder:text-white text-white outline-none bg-transparent rounded-md p-2 mb-4 w-full" placeholder="Enter your email">
-                    <label for="" class="text-white">Message</label>
-                    <textarea name="" id="" cols="20" rows="4" class="border-2 border-gray-300 placeholder:text-white text-white outline-none bg-transparent rounded-md p-2 mb-4 w-full" placeholder="Enter your message"></textarea>
-                    <button type="submit" class="m-auto w-[20%] bg-white hover:bg-teal-700 hover:text-white text-teal-700 font-bold py-2 px-4 rounded">Send</button>
-                </form>
-            </div>
+            
             <div class="text-gray-600 mt-9 text-center">
                 <p>&copy; 2025 Simi. All rights reserved.</p>
                 <p>Made with ❤️ using Tailwind CSS</p>
             </div>
         </div>
-    </div> 
-    
+    </div>
+    <script src="index.js"></script>    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.fog.min.js"></script>
     
@@ -196,5 +228,5 @@
           lowlightColor: 0x968fb6,
           baseColor: 0xf4f4f4
         })
-        </script>
+    </script>
 </html>
